@@ -87,7 +87,7 @@ header nav {
 
 header .logo h1 {
     margin: 0;
-    color: #212529; /* MUDADO para preto */
+    color: #212529; /* Preto */
     font-size: 1.5rem;
     font-weight: 800;
 }
@@ -97,6 +97,7 @@ header ul {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center; /* ALINHAMENTO VERTICAL DOS ITENS DA NAV */
 }
 
 header ul li {
@@ -104,12 +105,22 @@ header ul li {
 }
 
 header ul li a {
-    color: #212529; /* MUDADO para preto */
+    color: #212529; /* Preto */
     font-weight: 600;
     padding: 8px 0;
     position: relative;
+    display: flex; /* Para alinhar o texto e o ícone se o ícone fosse dentro do mesmo <a> */
+    align-items: center;
 }
 
+/* Estilo específico para o ícone do Instagram no cabeçalho */
+header ul li a .fab.fa-instagram {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    margin-left: 0px; /* Ajuste para o espaçamento à esquerda do ícone */
+    color: #212529; /* Cor preta para o ícone */
+}
+
+/* Linha de hover/active para os links (incluindo o ícone se for para ter) */
 header ul li a::after {
     content: '';
     position: absolute;
@@ -117,7 +128,7 @@ header ul li a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #212529; /* MUDADO para preto para a linha de hover/active */
+    background-color: #212529; /* Preto para a linha de hover/active */
     transition: width 0.3s ease;
 }
 
@@ -162,7 +173,7 @@ section {
 
 .home .hero-pt-content .pt-title {
     font-size: 2.8rem; /* Reduzido */
-    color: #212529; /* MUDADO para preto */
+    color: #212529; /* Preto */
     margin-bottom: 10px;
     font-weight: 900;
 }
