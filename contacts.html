@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | Bruno Parrinha | Personal Trainer</title>
+    <meta name="description" content="Entre em contacto com [Seu Nome PT] para agendar a sua consulta gratuita de personal training, tirar dúvidas sobre planos de treino e nutrição, ou pedir mais informações.">
+    <meta name="keywords" content="contacto personal trainer, agendar treino, email personal trainer, telefone personal trainer, consulta fitness, [Sua Cidade/Região]">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Bruno Parrinha | Personal Trainer</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="contacts.html" class="current">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-intro" data-aos="fade-down">
+            <h2>Entra em Contacto</h2>
+            <p>Estou aqui para te ajudar a alcançar os teus objetivos! Preenche o formulário abaixo, ou utiliza os meus contactos diretos. Responderei o mais breve possível!</p>
+        </section>
+
+        <section class="contact-form-section" data-aos="fade-up">
+            <h3>Envia-me uma Mensagem</h3>
+            <form action="https://formspree.io/f/SEU_FORM_ID" method="POST" class="contact-form" id="contactForm">
+                <div class="form-group" data-aos="fade-right">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required placeholder="O seu nome">
+                </div>
+                <div class="form-group" data-aos="fade-left">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="O seu melhor email">
+                </div>
+                <div class="form-group" data-aos="fade-right" data-aos-delay="100">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ex: +351 9XX XXX XXX">
+                </div>
+                <div class="form-group" data-aos="fade-left" data-aos-delay="100">
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Ex: Agendamento de consulta">
+                </div>
+                <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Descreva os seus objetivos ou dúvida..."></textarea>
+                </div>
+                <button type="submit" class="btn" data-aos="zoom-in" data-aos-delay="300">Enviar Mensagem</button>
+                <p id="form-status" class="form-note"></p>
+            </form>
+        </section>
+
+        <section class="contact-info-section" data-aos="fade-up" data-aos-delay="100">
+            <h3>Contactos Diretos</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:bruno_parrinha@hotmail.com">bruno_parrinha@hotmail.com</a></li>
+                <li><strong>Telefone/WhatsApp:</strong> <a href="tel:+3519XXXXXXXX">+351 938 495 597</a></li>
+                <li><strong>Localização:</strong> Barreiro, Portugal</li>
+            </ul>
+            <div class="social-media">
+                <p>Siga-me nas redes sociais:</p>
+                <a href="https://www.instagram.com/seu_instagram" target="_blank" data-aos="zoom-in">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bruno Parrinha | Personal Trainer. Todos os direitos reservados. Desenvolvido por <a href="https://nadiairina.github.io/Nadia-Portfolio/index.html" target="_blank">Nadia Irina</a>.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/seu_instagram" target="_blank">Instagram</a>
+            
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script src="js/script.js"></script> </body>
+</html>
