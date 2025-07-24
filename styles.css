@@ -85,11 +85,11 @@ header nav {
     padding: 0 25px;
 }
 
-header .logo h1 {
-    margin: 0;
-    color: #212529; /* Preto */
-    font-size: 1.5rem;
-    font-weight: 800;
+/* REMOVIDO: header .logo h1 */
+header .logo .header-logo { /* NOVO: Estilo para a imagem do logotipo */
+    height: 40px; /* Ajuste a altura conforme necessário para o seu logotipo */
+    vertical-align: middle;
+    width: auto; /* Mantém a proporção */
 }
 
 header ul {
@@ -97,7 +97,7 @@ header ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* ALINHAMENTO VERTICAL DOS ITENS DA NAV */
+    align-items: center;
 }
 
 header ul li {
@@ -109,18 +109,16 @@ header ul li a {
     font-weight: 600;
     padding: 8px 0;
     position: relative;
-    display: flex; /* Para alinhar o texto e o ícone se o ícone fosse dentro do mesmo <a> */
+    display: flex;
     align-items: center;
 }
 
-/* Estilo específico para o ícone do Instagram no cabeçalho */
 header ul li a .fab.fa-instagram {
-    font-size: 1.5rem; /* Tamanho do ícone */
-    margin-left: 0px; /* Ajuste para o espaçamento à esquerda do ícone */
-    color: #212529; /* Cor preta para o ícone */
+    font-size: 1.5rem;
+    margin-left: 0px;
+    color: #212529;
 }
 
-/* Linha de hover/active para os links (incluindo o ícone se for para ter) */
 header ul li a::after {
     content: '';
     position: absolute;
@@ -162,17 +160,17 @@ section {
 }
 
 .home .hero-pt-content .pt-profile-pic {
-    width: 350px; /* Aumentado */
-    height: 350px; /* Aumentado */
-    border-radius: 0; /* Removido para foto quadrada */
+    width: 350px;
+    height: 350px;
+    border-radius: 0;
     object-fit: cover;
-    border: 5px solid #212529; /* Borda preta */
+    border: 5px solid #212529;
     margin-bottom: 25px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .home .hero-pt-content .pt-title {
-    font-size: 2.8rem; /* Reduzido */
+    font-size: 2.8rem;
     color: #212529; /* Preto */
     margin-bottom: 10px;
     font-weight: 900;
@@ -507,8 +505,8 @@ footer .social-links a:hover {
         margin: auto;
     }
     /* Ajuste para o título do cabeçalho em telas menores */
-    header .logo h1 {
-        font-size: 1.3rem; /* Ainda menor em telas de tablet */
+    header .logo .header-logo {
+        height: 35px; /* Ajuste para telas menores */
     }
 }
 
@@ -529,8 +527,8 @@ footer .social-links a:hover {
         padding: 60px 15px;
     }
     .home .hero-pt-content .pt-profile-pic {
-        width: 280px; /* Ajuste para responsividade */
-        height: 280px; /* Ajuste para responsividade */
+        width: 280px;
+        height: 280px;
     }
     .home .hero-pt-content .pt-title {
         font-size: 2.2rem;
@@ -560,21 +558,21 @@ footer .social-links a:hover {
         padding: 30px;
     }
     /* Ajuste para o título do cabeçalho em telas de celular */
-    header .logo h1 {
-        font-size: 1.1rem; /* Ainda menor para se ajustar melhor */
+    header .logo .header-logo {
+        height: 30px; /* Ajuste para telas menores */
     }
 }
 
 @media (max-width: 480px) {
-    header .logo h1 {
-        font-size: 1rem; /* Ainda mais pequeno para mobile */
+    header .logo .header-logo {
+        height: 25px; /* Ajuste para telas menores */
     }
     header ul li {
         margin: 0 10px 10px;
     }
     .home .hero-pt-content .pt-profile-pic {
-        width: 220px; /* Ajuste para responsividade */
-        height: 220px; /* Ajuste para responsividade */
+        width: 220px;
+        height: 220px;
     }
     .home .hero-pt-content .pt-title {
         font-size: 1.8rem;
