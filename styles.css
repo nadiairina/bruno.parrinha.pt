@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    color: #212529;
+    color: #212529; /* Manter preto para títulos, para contraste */
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -29,17 +29,17 @@ p {
 
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #87CEEB; /* Azul Bebé para links */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #6495ED; /* Um pouco mais escuro para hover */
 }
 
 .btn {
     display: inline-block;
-    background: #007bff;
+    background: #87CEEB; /* Azul Bebé para botões */
     color: #fff;
     padding: 12px 25px;
     border-radius: 50px;
@@ -54,22 +54,23 @@ a:hover {
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: #6495ED; /* Um pouco mais escuro para hover */
     transform: translateY(-3px);
 }
 
-.btn.secondary-btn { /* Estilo para CTA secundário */
-    background: #6c757d; /* Um cinza escuro */
+.btn.secondary-btn {
+    background: #A0A0A0; /* Um cinza médio para CTA secundário */
+    color: #fff;
 }
 
 .btn.secondary-btn:hover {
-    background: #5a6268;
+    background: #808080; /* Cinza um pouco mais escuro para hover */
 }
 
 
 /* Header */
 header {
-    background: #212529;
+    background: #ADD8E6; /* Azul Bebé para o cabeçalho */
     color: #fff;
     padding: 1.2rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -87,7 +88,8 @@ header nav {
 header .logo h1 {
     margin: 0;
     color: #fff;
-    font-size: 2rem;
+    /* ALTERAÇÃO AQUI: Tamanho da fonte do título no cabeçalho */
+    font-size: 1.5rem; /* Reduzido de 2rem para 1.5rem */
     font-weight: 800;
 }
 
@@ -103,7 +105,7 @@ header ul li {
 }
 
 header ul li a {
-    color: #fff;
+    color: #fff; /* Links brancos no cabeçalho */
     font-weight: 600;
     padding: 8px 0;
     position: relative;
@@ -116,7 +118,7 @@ header ul li a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #007bff;
+    background-color: #fff; /* Linha de hover/active branca */
     transition: width 0.3s ease;
 }
 
@@ -124,6 +126,7 @@ header ul li a:hover::after,
 header ul li a.current::after {
     width: 100%;
 }
+
 
 /* Main Content Styling */
 main {
@@ -145,7 +148,7 @@ section {
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     max-width: 900px;
-    margin: 0 auto 60px auto; /* Centraliza e adiciona margem inferior */
+    margin: 0 auto 60px auto;
 }
 
 .home .hero-pt-content .pt-profile-pic {
@@ -153,14 +156,14 @@ section {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #007bff;
+    border: 5px solid #87CEEB; /* Borda Azul Bebé */
     margin-bottom: 25px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .home .hero-pt-content .pt-title {
     font-size: 3.2rem;
-    color: #007bff;
+    color: #87CEEB; /* Azul Bebé para o título principal */
     margin-bottom: 10px;
     font-weight: 900;
 }
@@ -179,9 +182,9 @@ section {
     padding: 50px 20px;
     max-width: 900px;
     margin: auto;
-    background-color: #f1f1f1; /* Fundo levemente cinza */
+    background-color: #f1f1f1;
     border-radius: 10px;
-    box-shadow: inset 0 2px 10px rgba(0,0,0,0.05); /* Sombra interna */
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
     margin-bottom: 60px;
 }
 
@@ -227,12 +230,12 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     flex: 1;
-    min-width: 280px; /* Reduzido para melhor quebra */
-    max-width: 30%; /* Para 3 colunas */
+    min-width: 280px;
+    max-width: 30%;
     text-align: center;
     font-style: italic;
     position: relative;
-    display: flex; /* Para centralizar conteúdo verticalmente se necessário */
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -244,20 +247,20 @@ section {
 }
 
 .home .testimonial-card p {
-    font-size: 1.05rem; /* Um pouco menor para caber mais */
+    font-size: 1.05rem;
     margin-bottom: 20px;
     color: #555;
-    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
+    flex-grow: 1;
 }
 
 .home .testimonial-card span {
     font-weight: bold;
-    color: #007bff;
+    color: #87CEEB; /* Azul Bebé para nomes dos testemunhos */
     display: block;
     margin-top: 10px;
 }
 
-/* Services Page (similar to About Page structure) - unchanged */
+/* Services Page (similar to About Page structure) */
 .services-page .page-intro {
     max-width: 900px;
     margin: auto;
@@ -272,7 +275,7 @@ section {
 .services-page .page-intro h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #87CEEB; /* Azul Bebé */
 }
 
 .services-page .page-intro p {
@@ -303,7 +306,7 @@ section {
 }
 
 .services-page .service-item h3 {
-    color: #007bff;
+    color: #87CEEB; /* Azul Bebé */
     font-size: 1.8rem;
     margin-bottom: 15px;
 }
@@ -322,7 +325,7 @@ section {
     margin-bottom: 8px;
 }
 
-/* Contact Page - unchanged */
+/* Contact Page */
 .contact-page .contact-intro {
     max-width: 900px;
     margin: auto;
@@ -337,7 +340,7 @@ section {
 .contact-page .contact-intro h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #87CEEB; /* Azul Bebé */
 }
 
 .contact-page .contact-intro p {
@@ -384,6 +387,11 @@ section {
 .contact-page .contact-info-section .social-media a {
     margin: 0 15px;
     font-weight: 600;
+    color: #87CEEB; /* Links sociais em Azul Bebé */
+}
+
+.contact-page .contact-info-section .social-media a:hover {
+    color: #6495ED; /* Hover Azul Bebé mais escuro */
 }
 
 .contact-page .contact-form .form-group {
@@ -412,8 +420,8 @@ section {
 
 .contact-page .contact-form input:focus,
 .contact-page .contact-form textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #87CEEB; /* Borda de foco em Azul Bebé */
+    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25); /* Sombra de foco em Azul Bebé */
     outline: none;
 }
 
@@ -436,8 +444,8 @@ section {
 
 /* Footer (Updated with Developer Credit) */
 footer {
-    background: #212529;
-    color: #fff;
+    background: #ADD8E6; /* Azul Bebé para o rodapé */
+    color: #fff; /* Texto branco no rodapé azul claro */
     text-align: center;
     padding: 2rem 0;
     margin-top: 60px;
@@ -445,7 +453,7 @@ footer {
 }
 
 footer p {
-    margin-bottom: 10px; /* Ajuste para não ter muita margem entre as linhas do footer */
+    margin-bottom: 10px;
 }
 
 footer .social-links {
@@ -453,13 +461,13 @@ footer .social-links {
 }
 
 footer .social-links a {
-    color: #fff;
+    color: #fff; /* Links sociais brancos no rodapé */
     margin: 0 10px;
     font-weight: 500;
 }
 
 footer .social-links a:hover {
-    color: #007bff;
+    color: #6495ED; /* Hover Azul Bebé mais escuro para links sociais no rodapé */
 }
 
 /* Responsividade */
@@ -474,14 +482,18 @@ footer .social-links a:hover {
         font-size: 2.2rem;
     }
     .home .testimonial-card {
-        max-width: 45%; /* Duas colunas */
+        max-width: 45%;
     }
     .services-page .service-details {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        grid-template-columns: 1fr;
     }
     .services-page .service-item {
         max-width: 90%;
         margin: auto;
+    }
+    /* Ajuste para o título do cabeçalho em telas menores */
+    header .logo h1 {
+        font-size: 1.3rem; /* Ainda menor em telas de tablet */
     }
 }
 
@@ -514,7 +526,7 @@ footer .social-links a:hover {
         font-size: 1.05rem;
     }
     .home .testimonial-card {
-        max-width: 80%; /* Uma coluna maior */
+        max-width: 80%;
     }
     .services-page .page-intro,
     .contact-page .contact-intro {
@@ -528,11 +540,15 @@ footer .social-links a:hover {
     .contact-page .contact-info-section {
         padding: 30px;
     }
+    /* Ajuste para o título do cabeçalho em telas de celular */
+    header .logo h1 {
+        font-size: 1.1rem; /* Ainda menor para se ajustar melhor */
+    }
 }
 
 @media (max-width: 480px) {
     header .logo h1 {
-        font-size: 1.8rem;
+        font-size: 1rem; /* Ainda mais pequeno para mobile */
     }
     header ul li {
         margin: 0 10px 10px;
@@ -550,7 +566,7 @@ footer .social-links a:hover {
     }
     .home .testimonial-card {
         min-width: unset;
-        width: 100%; /* Ocupa a largura total */
+        width: 100%;
         max-width: 100%;
     }
     .contact-page .contact-form-section,
