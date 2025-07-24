@@ -29,17 +29,17 @@ p {
 
 a {
     text-decoration: none;
-    color: #87CEEB; /* Azul Bebé para links */
+    color: #6495ED; /* CornflowerBlue para links */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #6495ED; /* Um pouco mais escuro para hover */
+    color: #4169E1; /* RoyalBlue para hover */
 }
 
 .btn {
     display: inline-block;
-    background: #87CEEB; /* Azul Bebé para botões */
+    background: #6495ED; /* CornflowerBlue para botões */
     color: #fff;
     padding: 12px 25px;
     border-radius: 50px;
@@ -54,7 +54,7 @@ a:hover {
 }
 
 .btn:hover {
-    background: #6495ED; /* Um pouco mais escuro para hover */
+    background: #4169E1; /* RoyalBlue para hover do botão */
     transform: translateY(-3px);
 }
 
@@ -70,7 +70,7 @@ a:hover {
 
 /* Header */
 header {
-    background: #ADD8E6; /* Azul Bebé para o cabeçalho */
+    background: #4169E1; /* RoyalBlue para o cabeçalho */
     color: #fff;
     padding: 1.2rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -87,9 +87,8 @@ header nav {
 
 header .logo h1 {
     margin: 0;
-    color: #fff;
-    /* ALTERAÇÃO AQUI: Tamanho da fonte do título no cabeçalho */
-    font-size: 1.5rem; /* Reduzido de 2rem para 1.5rem */
+    color: #212529; /* MUDADO para preto */
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -105,7 +104,7 @@ header ul li {
 }
 
 header ul li a {
-    color: #fff; /* Links brancos no cabeçalho */
+    color: #212529; /* MUDADO para preto */
     font-weight: 600;
     padding: 8px 0;
     position: relative;
@@ -118,7 +117,7 @@ header ul li a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #fff; /* Linha de hover/active branca */
+    background-color: #212529; /* MUDADO para preto para a linha de hover/active */
     transition: width 0.3s ease;
 }
 
@@ -154,16 +153,16 @@ section {
 .home .hero-pt-content .pt-profile-pic {
     width: 350px; /* Aumentado */
     height: 350px; /* Aumentado */
-    border-radius: 50%;
+    border-radius: 0; /* Removido para foto quadrada */
     object-fit: cover;
-    border: 5px solid #87CEEB; /* Borda Azul Bebé */
+    border: 5px solid #212529; /* Borda preta */
     margin-bottom: 25px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .home .hero-pt-content .pt-title {
     font-size: 2.8rem; /* Reduzido */
-    color: #87CEEB; /* Azul Bebé para o título principal */
+    color: #212529; /* MUDADO para preto */
     margin-bottom: 10px;
     font-weight: 900;
 }
@@ -255,7 +254,7 @@ section {
 
 .home .testimonial-card span {
     font-weight: bold;
-    color: #87CEEB; /* Azul Bebé para nomes dos testemunhos */
+    color: #6495ED; /* CornflowerBlue para nomes dos testemunhos */
     display: block;
     margin-top: 10px;
 }
@@ -275,7 +274,7 @@ section {
 .services-page .page-intro h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #87CEEB; /* Azul Bebé */
+    color: #6495ED; /* CornflowerBlue */
 }
 
 .services-page .page-intro p {
@@ -306,7 +305,7 @@ section {
 }
 
 .services-page .service-item h3 {
-    color: #87CEEB; /* Azul Bebé */
+    color: #6495ED; /* CornflowerBlue */
     font-size: 1.8rem;
     margin-bottom: 15px;
 }
@@ -340,7 +339,7 @@ section {
 .contact-page .contact-intro h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #87CEEB; /* Azul Bebé */
+    color: #6495ED; /* CornflowerBlue */
 }
 
 .contact-page .contact-intro p {
@@ -387,11 +386,11 @@ section {
 .contact-page .contact-info-section .social-media a {
     margin: 0 15px;
     font-weight: 600;
-    color: #87CEEB; /* Links sociais em Azul Bebé */
+    color: #6495ED; /* CornflowerBlue para links sociais */
 }
 
 .contact-page .contact-info-section .social-media a:hover {
-    color: #6495ED; /* Hover Azul Bebé mais escuro */
+    color: #4169E1; /* RoyalBlue para hover */
 }
 
 .contact-page .contact-form .form-group {
@@ -420,8 +419,8 @@ section {
 
 .contact-page .contact-form input:focus,
 .contact-page .contact-form textarea:focus {
-    border-color: #87CEEB; /* Borda de foco em Azul Bebé */
-    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25); /* Sombra de foco em Azul Bebé */
+    border-color: #6495ED; /* CornflowerBlue para borda de foco */
+    box-shadow: 0 0 0 0.2rem rgba(100, 149, 237, 0.25); /* Sombra de foco em CornflowerBlue */
     outline: none;
 }
 
@@ -444,7 +443,7 @@ section {
 
 /* Footer (Updated with Developer Credit) */
 footer {
-    background: #ADD8E6; /* Azul Bebé para o rodapé */
+    background: #4169E1; /* RoyalBlue para o rodapé */
     color: #212529; /* Mudado para preto para o texto geral do rodapé */
     text-align: center;
     padding: 2rem 0;
@@ -472,7 +471,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-    color: #6495ED; /* Hover Azul Bebé mais escuro para links sociais no rodapé */
+    color: #6495ED; /* CornflowerBlue para hover de links sociais no rodapé */
 }
 
 /* Responsividade */
