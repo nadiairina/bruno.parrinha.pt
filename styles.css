@@ -40,7 +40,7 @@ a:hover {
 .btn {
     display: inline-block;
     background: #6495ED; /* CornflowerBlue para botões */
-    color: #fff;
+    color: #fff; /* Texto do botão branco */
     padding: 12px 25px;
     border-radius: 50px;
     transition: background 0.3s ease, transform 0.3s ease;
@@ -56,6 +56,7 @@ a:hover {
 .btn:hover {
     background: #4169E1; /* RoyalBlue para hover do botão */
     transform: translateY(-3px);
+    color: #fff !important; /* GARANTE QUE O TEXTO CONTINUA BRANCO NO HOVER */
 }
 
 .btn.secondary-btn {
@@ -85,10 +86,10 @@ header nav {
     padding: 0 25px;
 }
 
-/* Estilo para a imagem do logotipo - AUMENTADO PARA 90px */
+/* Estilo para a imagem do logotipo - AUMENTADO PARA 100px */
 header .logo .header-logo {
-    height: 90px; /* AGORA: Aumentado para 90px */
-    width: auto;
+    height: 100px; /* AGORA: Aumentado para 100px para ser maior */
+    width: auto; /* Mantém a proporção da imagem */
     vertical-align: middle;
 }
 
@@ -102,7 +103,7 @@ header ul {
 
 header ul li {
     margin-left: 30px;
-    padding-bottom: 0; /* AGORA: Sem padding-bottom aqui */
+    padding-bottom: 0; /* AGORA: Remove padding-bottom para não afetar o alinhamento vertical do texto */
 }
 
 header ul li a {
@@ -111,9 +112,9 @@ header ul li a {
     padding: 8px 0; /* Padding vertical para a área clicável */
     position: relative;
     display: flex; /* AGORA: Mude para flex para alinhar texto/ícone */
-    align-items: center; /* AGORA: Alinha itens dentro do link */
-    gap: 5px; /* AGORA: Espaçamento entre texto e ícone (se houver) */
-    line-height: 1; /* Para controlar melhor a altura do texto */
+    align-items: center; /* AGORA: Alinha itens dentro do link, garantindo que o texto está no centro vertical */
+    gap: 5px; /* Espaçamento entre texto e ícone (se houver) */
+    line-height: 1; /* Para controlar melhor a altura do texto e ajudar no alinhamento */
 }
 
 /* Garante que o texto dos links da navegação permanece preto no hover */
@@ -134,7 +135,7 @@ header ul li a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -8px; /* AGORA: Posição da linha ajustada para desalinhamento */
+    bottom: -8px; /* AGORA: Ajustado para mover a linha para baixo do texto SEM afetar o alinhamento vertical do texto principal */
     left: 0;
     background-color: #212529; /* Preto para a linha de hover/active */
     transition: width 0.3s ease;
@@ -516,7 +517,7 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas menores */
     header .logo .header-logo {
-        height: 80px; /* AGORA: Ajuste para 80px para telas menores */
+        height: 85px; /* AGORA: Ajuste para 85px para telas menores */
     }
 }
 
@@ -569,13 +570,13 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas de celular */
     header .logo .header-logo {
-        height: 70px; /* AGORA: Ajuste para 70px para telas de celular */
+        height: 75px; /* AGORA: Ajuste para 75px para telas de celular */
     }
 }
 
 @media (max-width: 480px) {
     header .logo .header-logo {
-        height: 60px; /* AGORA: Ajuste final para mobile */
+        height: 65px; /* AGORA: Ajuste final para mobile */
     }
     header ul li {
         margin: 0 10px 10px;
