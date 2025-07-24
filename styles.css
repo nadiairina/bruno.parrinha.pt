@@ -1,4 +1,4 @@
-/* Estilos Gerais (Manter como estão) */
+/* Estilos Gerais */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -85,9 +85,9 @@ header nav {
     padding: 0 25px;
 }
 
-/* Estilo para a imagem do logotipo */
+/* Estilo para a imagem do logotipo - AUMENTADO PARA 80px */
 header .logo .header-logo {
-    height: 70px; /* Aumentado para 70px. Pode ajustar este valor. */
+    height: 80px; /* Aumentado para 80px. Pode ajustar este valor. */
     width: auto; /* Mantém a proporção da imagem */
     vertical-align: middle;
 }
@@ -97,7 +97,7 @@ header ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Garante que os itens da lista estão alinhados */
+    align-items: center; /* Para alinhar verticalmente os itens da navegação */
 }
 
 header ul li {
@@ -113,6 +113,7 @@ header ul li a {
     position: relative;
     display: block; /* Mudei para block para preencher o espaço do padding-bottom do li */
     line-height: 1; /* Para controlar melhor a altura do texto */
+    align-items: center; /* Para alinhar o texto e o ícone do Instagram */
 }
 
 /* Garante que o texto dos links da navegação permanece preto no hover */
@@ -120,7 +121,7 @@ header ul li a:hover {
     color: #212529; /* Preto */
 }
 
-/* NOVO: Estilo para o ícone do Instagram */
+/* Estilo para o ícone do Instagram */
 header ul li a .fab.fa-instagram {
     font-size: 1.5rem;
     margin-left: 0px;
@@ -145,7 +146,7 @@ header ul li a.current::after {
 }
 
 
-/* Main Content Styling (Manter como está) */
+/* Main Content Styling */
 main {
     padding: 60px 0;
     min-height: calc(100vh - 180px);
@@ -155,7 +156,7 @@ section {
     margin-bottom: 60px;
 }
 
-/* Home Page Specifics (Manter como está) */
+/* Home Page Specifics */
 
 /* Hero PT Section */
 .home .hero-pt-section {
@@ -515,7 +516,7 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas menores */
     header .logo .header-logo {
-        height: 60px; /* Ajuste para telas menores */
+        height: 70px; /* Ajuste para telas menores */
     }
 }
 
@@ -568,13 +569,13 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas de celular */
     header .logo .header-logo {
-        height: 50px; /* Ajuste para telas menores */
+        height: 60px; /* Ajuste para telas menores */
     }
 }
 
 @media (max-width: 480px) {
     header .logo .header-logo {
-        height: 45px; /* Ajuste final para mobile */
+        height: 55px; /* Ajuste final para mobile */
     }
     header ul li {
         margin: 0 10px 10px;
