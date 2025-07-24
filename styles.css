@@ -153,8 +153,8 @@ section {
 }
 
 .home .hero-pt-content .pt-profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 350px; /* Aumentado */
+    height: 350px; /* Aumentado */
     border-radius: 0;
     object-fit: cover;
     border: 5px solid #6495ED; /* CornflowerBlue para a borda da foto */
@@ -163,7 +163,7 @@ section {
 }
 
 .home .hero-pt-content .pt-title {
-    font-size: 3.2rem;
+    font-size: 2.8rem; /* Reduzido */
     color: #6495ED; /* CornflowerBlue para o título principal */
     margin-bottom: 10px;
     font-weight: 900;
@@ -458,6 +458,7 @@ footer p {
 }
 
 footer p a {
+    color: #212529; /* Nome "Nadia Irina" a preto */
     text-decoration: underline; /* Sublinha o link "Nadia Irina" */
 }
 
@@ -478,7 +479,7 @@ footer .social-links a:hover {
 /* Responsividade */
 @media (max-width: 992px) {
     .home .hero-pt-content .pt-title {
-        font-size: 2.8rem;
+        font-size: 2.5rem; /* Ajuste para responsividade */
     }
     .home .hero-pt-content .pt-subtitle {
         font-size: 1.3rem;
@@ -518,11 +519,11 @@ footer .social-links a:hover {
         padding: 60px 15px;
     }
     .home .hero-pt-content .pt-profile-pic {
-        width: 250px;
-        height: 250px;
+        width: 280px; /* Ajuste para responsividade */
+        height: 280px; /* Ajuste para responsividade */
     }
     .home .hero-pt-content .pt-title {
-        font-size: 2.2rem;
+        font-size: 2rem; /* Ajuste para responsividade */
     }
     .home .hero-pt-content .pt-subtitle {
         font-size: 1.1rem;
@@ -561,11 +562,11 @@ footer .social-links a:hover {
         margin: 0 10px 10px;
     }
     .home .hero-pt-content .pt-profile-pic {
-        width: 200px;
-        height: 200px;
+        width: 220px; /* Ajuste para responsividade */
+        height: 220px; /* Ajuste para responsividade */
     }
     .home .hero-pt-content .pt-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem; /* Ajuste para responsividade */
     }
     .home .hero-pt-content .pt-subtitle {
         font-size: 1rem;
