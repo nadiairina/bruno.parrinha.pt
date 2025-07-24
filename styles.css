@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fff; /* Revertido para branco */
+    background-color: #f8f9fa;
     color: #343a40;
     line-height: 1.7;
     overflow-x: hidden;
@@ -29,18 +29,18 @@ p {
 
 a {
     text-decoration: none;
-    color: #6495ED; /* CornflowerBlue para links */
+    color: #87CEEB; /* Azul Bebé para links */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #6495ED; /* CornflowerBlue para hover de links */
+    color: #6495ED; /* Um pouco mais escuro para hover */
 }
 
 .btn {
     display: inline-block;
-    background: #6495ED; /* CornflowerBlue para botões */
-    color: #fff; /* Texto branco */
+    background: #87CEEB; /* Azul Bebé para botões */
+    color: #fff;
     padding: 12px 25px;
     border-radius: 50px;
     transition: background 0.3s ease, transform 0.3s ease;
@@ -54,25 +54,23 @@ a:hover {
 }
 
 .btn:hover {
-    background: #6495ED; /* CornflowerBlue para hover do botão */
-    color: #fff; /* GARANTE QUE O TEXTO CONTINUA BRANCO NO HOVER */
+    background: #6495ED; /* Um pouco mais escuro para hover */
     transform: translateY(-3px);
 }
 
 .btn.secondary-btn {
-    background: #6495ED; /* CornflowerBlue para CTA secundário */
+    background: #A0A0A0; /* Um cinza médio para CTA secundário */
     color: #fff;
 }
 
 .btn.secondary-btn:hover {
-    background: #6495ED; /* CornflowerBlue para hover do CTA secundário */
-    transform: translateY(-3px);
+    background: #808080; /* Cinza um pouco mais escuro para hover */
 }
 
 
 /* Header */
 header {
-    background: #6495ED; /* CornflowerBlue para o cabeçalho */
+    background: #ADD8E6; /* Azul Bebé para o cabeçalho */
     color: #fff;
     padding: 1.2rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -89,8 +87,9 @@ header nav {
 
 header .logo h1 {
     margin: 0;
-    color: #212529; /* Título "Bruno Parrinha | Personal Trainer" a preto */
-    font-size: 1.2rem;
+    color: #fff;
+    /* ALTERAÇÃO AQUI: Tamanho da fonte do título no cabeçalho */
+    font-size: 1.5rem; /* Reduzido de 2rem para 1.5rem */
     font-weight: 800;
 }
 
@@ -106,7 +105,7 @@ header ul li {
 }
 
 header ul li a {
-    color: #212529; /* Links de navegação ("Início", "Serviços", "Contactos") a preto */
+    color: #fff; /* Links brancos no cabeçalho */
     font-weight: 600;
     padding: 8px 0;
     position: relative;
@@ -119,7 +118,7 @@ header ul li a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #212529; /* Linha de hover/active também a preto */
+    background-color: #fff; /* Linha de hover/active branca */
     transition: width 0.3s ease;
 }
 
@@ -145,7 +144,7 @@ section {
 .home .hero-pt-section {
     text-align: center;
     padding: 80px 20px;
-    background: #F8F8F8; /* Alterado para cinzento muito claro */
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     max-width: 900px;
@@ -155,16 +154,16 @@ section {
 .home .hero-pt-content .pt-profile-pic {
     width: 350px; /* Aumentado */
     height: 350px; /* Aumentado */
-    border-radius: 0;
+    border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #6495ED; /* CornflowerBlue para a borda da foto */
+    border: 5px solid #87CEEB; /* Borda Azul Bebé */
     margin-bottom: 25px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .home .hero-pt-content .pt-title {
     font-size: 2.8rem; /* Reduzido */
-    color: #6495ED; /* CornflowerBlue para o título principal */
+    color: #87CEEB; /* Azul Bebé para o título principal */
     margin-bottom: 10px;
     font-weight: 900;
 }
@@ -183,7 +182,7 @@ section {
     padding: 50px 20px;
     max-width: 900px;
     margin: auto;
-    background-color: #F8F8F8; /* Alterado para cinzento muito claro */
+    background-color: #f1f1f1;
     border-radius: 10px;
     box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
     margin-bottom: 60px;
@@ -226,7 +225,7 @@ section {
 }
 
 .home .testimonial-card {
-    background: #F8F8F8; /* Alterado para cinzento muito claro */
+    background: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -256,7 +255,7 @@ section {
 
 .home .testimonial-card span {
     font-weight: bold;
-    color: #6495ED; /* CornflowerBlue para nomes dos testemunhos */
+    color: #87CEEB; /* Azul Bebé para nomes dos testemunhos */
     display: block;
     margin-top: 10px;
 }
@@ -265,7 +264,7 @@ section {
 .services-page .page-intro {
     max-width: 900px;
     margin: auto;
-    background: #F8F8F8; /* Alterado para cinzento muito claro */
+    background: #fff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
@@ -275,8 +274,8 @@ section {
 
 .services-page .page-intro h2 {
     font-size: 3rem;
-    color: #6495ED; /* CornflowerBlue */
     margin-bottom: 20px;
+    color: #87CEEB; /* Azul Bebé */
 }
 
 .services-page .page-intro p {
@@ -293,7 +292,7 @@ section {
 }
 
 .services-page .service-item {
-    background: #F8F8F8; /* Alterado para cinzento muito claro */
+    background: #fff;
     padding: 35px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -307,7 +306,7 @@ section {
 }
 
 .services-page .service-item h3 {
-    color: #6495ED; /* CornflowerBlue */
+    color: #87CEEB; /* Azul Bebé */
     font-size: 1.8rem;
     margin-bottom: 15px;
 }
@@ -330,7 +329,7 @@ section {
 .contact-page .contact-intro {
     max-width: 900px;
     margin: auto;
-    background: #F8F8F8; /* Alterado para cinzento muito claro */
+    background: #fff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
@@ -340,8 +339,8 @@ section {
 
 .contact-page .contact-intro h2 {
     font-size: 3rem;
-    color: #6495ED; /* CornflowerBlue */
     margin-bottom: 20px;
+    color: #87CEEB; /* Azul Bebé */
 }
 
 .contact-page .contact-intro p {
@@ -353,7 +352,7 @@ section {
 .contact-page .contact-info-section {
     max-width: 800px;
     margin: 40px auto;
-    background: #F8F8F8; /* Alterado para cinzento muito claro */
+    background: #fff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
@@ -386,13 +385,13 @@ section {
 }
 
 .contact-page .contact-info-section .social-media a {
-    color: #6495ED; /* CornflowerBlue para links sociais */
     margin: 0 15px;
     font-weight: 600;
+    color: #87CEEB; /* Links sociais em Azul Bebé */
 }
 
 .contact-page .contact-info-section .social-media a:hover {
-    color: #6495ED; /* CornflowerBlue para hover de links sociais */
+    color: #6495ED; /* Hover Azul Bebé mais escuro */
 }
 
 .contact-page .contact-form .form-group {
@@ -421,8 +420,8 @@ section {
 
 .contact-page .contact-form input:focus,
 .contact-page .contact-form textarea:focus {
-    border-color: #6495ED; /* CornflowerBlue para borda de foco */
-    box-shadow: 0 0 0 0.2rem rgba(100, 149, 237, 0.25); /* Sombra de foco em CornflowerBlue */
+    border-color: #87CEEB; /* Borda de foco em Azul Bebé */
+    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25); /* Sombra de foco em Azul Bebé */
     outline: none;
 }
 
@@ -445,8 +444,8 @@ section {
 
 /* Footer (Updated with Developer Credit) */
 footer {
-    background: #6495ED; /* CornflowerBlue para o rodapé */
-    color: #212529; /* Texto do rodapé a preto para contraste */
+    background: #ADD8E6; /* Azul Bebé para o rodapé */
+    color: #212529; /* Mudado para preto para o texto geral do rodapé */
     text-align: center;
     padding: 2rem 0;
     margin-top: 60px;
@@ -458,7 +457,7 @@ footer p {
 }
 
 footer p a {
-    color: #212529; /* Nome "Nadia Irina" a preto */
+    color: #212529; /* Definido explicitamente para preto */
     text-decoration: underline; /* Sublinha o link "Nadia Irina" */
 }
 
@@ -473,7 +472,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-    color: #6495ED; /* CornflowerBlue para hover de links sociais */
+    color: #6495ED; /* Hover Azul Bebé mais escuro para links sociais no rodapé */
 }
 
 /* Responsividade */
@@ -497,8 +496,9 @@ footer .social-links a:hover {
         max-width: 90%;
         margin: auto;
     }
+    /* Ajuste para o título do cabeçalho em telas menores */
     header .logo h1 {
-        font-size: 1.1rem;
+        font-size: 1.3rem; /* Ainda menor em telas de tablet */
     }
 }
 
@@ -523,7 +523,7 @@ footer .social-links a:hover {
         height: 280px; /* Ajuste para responsividade */
     }
     .home .hero-pt-content .pt-title {
-        font-size: 2rem; /* Ajuste para responsividade */
+        font-size: 2.2rem;
     }
     .home .hero-pt-content .pt-subtitle {
         font-size: 1.1rem;
@@ -549,14 +549,15 @@ footer .social-links a:hover {
     .contact-page .contact-info-section {
         padding: 30px;
     }
+    /* Ajuste para o título do cabeçalho em telas de celular */
     header .logo h1 {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Ainda menor para se ajustar melhor */
     }
 }
 
 @media (max-width: 480px) {
     header .logo h1 {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Ainda mais pequeno para mobile */
     }
     header ul li {
         margin: 0 10px 10px;
@@ -566,7 +567,7 @@ footer .social-links a:hover {
         height: 220px; /* Ajuste para responsividade */
     }
     .home .hero-pt-content .pt-title {
-        font-size: 1.6rem; /* Ajuste para responsividade */
+        font-size: 1.8rem;
     }
     .home .hero-pt-content .pt-subtitle {
         font-size: 1rem;
