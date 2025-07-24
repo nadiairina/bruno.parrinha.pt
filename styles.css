@@ -71,9 +71,9 @@ a:hover {
 
 /* Header */
 header {
-    background: #6495ED; /* CornflowerBlue */
+    background: #6495ED; /* AGORA: CornflowerBlue */
     color: #fff;
-    padding: 0.8rem 0; /* MANTIDO: Padding vertical do header para manter a altura da barra */
+    padding: 5px 0; /* AGORA: Padding vertical mínimo para a barra ser o mais fina possível */
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
@@ -86,9 +86,9 @@ header nav {
     padding: 0 25px;
 }
 
-/* Estilo para a imagem do logotipo - AUMENTADO PARA 120px */
+/* Estilo para a imagem do logotipo - AUMENTADO E ADAPTADO À BARRA FINA */
 header .logo .header-logo {
-    height: 120px; /* AGORA: Aumentado para 120px */
+    height: 90px; /* AGORA: Ajustado para ser maior e caber na barra mais fina */
     width: auto; /* Mantém a proporção da imagem */
     vertical-align: middle;
 }
@@ -112,7 +112,7 @@ header ul li {
 header ul li a {
     color: #212529; /* Cor preta para os links do cabeçalho */
     font-weight: 600;
-    padding: 5px 0; /* Ajustado padding vertical do link para o alinhamento */
+    padding: 0; /* AGORA: Padding vertical removido para os links para não afetar o alinhamento */
     position: relative;
     display: flex; /* Garante que o texto e o ::after não afetem o alinhamento entre si */
     align-items: center; /* Alinha itens dentro do link */
@@ -467,7 +467,7 @@ section {
 
 /* Footer (Updated with Developer Credit) */
 footer {
-    background: #6495ED; /* CornflowerBlue */
+    background: #6495ED; /* AGORA: CornflowerBlue */
     color: #212529;
     text-align: center;
     padding: 2rem 0;
@@ -502,13 +502,13 @@ footer .social-links a:hover {
 @media (max-width: 992px) {
     /* Ajustes para o header em telas menores */
     header {
-        padding: 0.7rem 0; /* MANTIDO: Ajuste o padding do header para telas menores */
+        padding: 5px 0; /* MANTIDO: Padding vertical mínimo */
     }
     header .logo .header-logo {
-        height: 105px; /* AGORA: Aumentado para 105px */
+        height: 80px; /* AGORA: Ajustado para telas menores */
     }
     header ul li a {
-        padding: 4px 0; /* Ajuste o padding do link para telas menores */
+        padding: 0; /* Padding vertical removido para os links */
     }
 
     .home .hero-pt-content .pt-title {
@@ -535,25 +535,25 @@ footer .social-links a:hover {
 @media (max-width: 768px) {
     /* Ajustes para o header em telas de celular */
     header {
-        padding: 0.6rem 0; /* MANTIDO: Mais ajuste o padding do header */
+        padding: 5px 0; /* MANTIDO: Padding vertical mínimo */
     }
     header nav {
         flex-direction: column;
         text-align: center;
     }
     header ul {
-        margin-top: 15px; /* Reduzido o margin-top */
+        margin-top: 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
     header ul li {
-        margin: 0 15px 8px; /* Ajustado margin-bottom */
+        margin: 0 15px 8px;
     }
     header ul li a {
-        padding: 3px 0; /* Mais ajuste o padding do link */
+        padding: 0; /* Padding vertical removido para os links */
     }
     header .logo .header-logo {
-        height: 95px; /* AGORA: Aumentado para 95px */
+        height: 70px; /* AGORA: Ajustado para telas de celular */
     }
     
     .home .hero-pt-section {
@@ -594,16 +594,16 @@ footer .social-links a:hover {
 
 @media (max-width: 480px) {
     header {
-        padding: 0.5rem 0; /* MANTIDO: Ajuste final do padding do header para mobile */
+        padding: 5px 0; /* MANTIDO: Padding vertical mínimo */
     }
     header .logo .header-logo {
-        height: 85px; /* AGORA: Aumentado para 85px */
+        height: 60px; /* AGORA: Ajuste final para mobile */
     }
     header ul li {
-        margin: 0 10px 5px; /* Ajustado margin-bottom final */
+        margin: 0 10px 5px;
     }
     header ul li a {
-        padding: 2px 0; /* Ajuste final do padding do link */
+        padding: 0; /* Padding vertical removido para os links */
     }
 
     .home .hero-pt-content .pt-title {
