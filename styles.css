@@ -70,7 +70,7 @@ a:hover {
 
 /* Header */
 header {
-    background: #4169E1; /* RoyalBlue para o cabeçalho */
+    background: #6495ED; /* AGORA: CornflowerBlue (igual aos títulos) */
     color: #fff;
     padding: 1.2rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -85,10 +85,10 @@ header nav {
     padding: 0 25px;
 }
 
-/* Estilo para a imagem do logotipo - AUMENTADO PARA 80px */
+/* Estilo para a imagem do logotipo - AUMENTADO PARA 90px */
 header .logo .header-logo {
-    height: 80px; /* Aumentado para 80px. Pode ajustar este valor. */
-    width: auto; /* Mantém a proporção da imagem */
+    height: 90px; /* AGORA: Aumentado para 90px */
+    width: auto;
     vertical-align: middle;
 }
 
@@ -97,23 +97,23 @@ header ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Para alinhar verticalmente os itens da navegação */
+    align-items: center; /* Garante que os itens da lista estão alinhados */
 }
 
 header ul li {
     margin-left: 30px;
-    /* Adicionado padding-bottom para criar espaço para a linha sem desalinhamento */
-    padding-bottom: 5px; /* Altura da linha + um pouco mais para espaçamento visual */
+    padding-bottom: 0; /* AGORA: Sem padding-bottom aqui */
 }
 
 header ul li a {
     color: #212529; /* Cor preta para os links do cabeçalho */
     font-weight: 600;
-    padding: 8px 0;
+    padding: 8px 0; /* Padding vertical para a área clicável */
     position: relative;
-    display: block; /* Mudei para block para preencher o espaço do padding-bottom do li */
+    display: flex; /* AGORA: Mude para flex para alinhar texto/ícone */
+    align-items: center; /* AGORA: Alinha itens dentro do link */
+    gap: 5px; /* AGORA: Espaçamento entre texto e ícone (se houver) */
     line-height: 1; /* Para controlar melhor a altura do texto */
-    align-items: center; /* Para alinhar o texto e o ícone do Instagram */
 }
 
 /* Garante que o texto dos links da navegação permanece preto no hover */
@@ -134,7 +134,7 @@ header ul li a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -5px; /* Posição da linha */
+    bottom: -8px; /* AGORA: Posição da linha ajustada para desalinhamento */
     left: 0;
     background-color: #212529; /* Preto para a linha de hover/active */
     transition: width 0.3s ease;
@@ -172,16 +172,16 @@ section {
 .home .hero-pt-content .pt-profile-pic {
     width: 350px;
     height: 350px;
-    border-radius: 0; /* Removido para foto quadrada */
+    border-radius: 0;
     object-fit: cover;
-    border: 5px solid #212529; /* Borda preta */
+    border: 5px solid #212529;
     margin-bottom: 25px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .home .hero-pt-content .pt-title {
     font-size: 2.8rem;
-    color: #212529; /* Preto */
+    color: #212529;
     margin-bottom: 10px;
     font-weight: 900;
 }
@@ -462,8 +462,8 @@ section {
 
 /* Footer (Updated with Developer Credit) */
 footer {
-    background: #4169E1; /* RoyalBlue para o rodapé */
-    color: #212529; /* Mudado para preto para o texto geral do rodapé */
+    background: #6495ED; /* AGORA: CornflowerBlue (igual aos títulos) */
+    color: #212529;
     text-align: center;
     padding: 2rem 0;
     margin-top: 60px;
@@ -475,8 +475,8 @@ footer p {
 }
 
 footer p a {
-    color: #212529; /* Definido explicitamente para preto */
-    text-decoration: underline; /* Sublinha o link "Nadia Irina" */
+    color: #212529;
+    text-decoration: underline;
 }
 
 footer .social-links {
@@ -484,19 +484,19 @@ footer .social-links {
 }
 
 footer .social-links a {
-    color: #212529; /* Links sociais no rodapé a preto */
+    color: #212529;
     margin: 0 10px;
     font-weight: 500;
 }
 
 footer .social-links a:hover {
-    color: #6495ED; /* CornflowerBlue para hover de links sociais no rodapé */
+    color: #4169E1; /* RoyalBlue para hover de links sociais no rodapé */
 }
 
 /* Responsividade */
 @media (max-width: 992px) {
     .home .hero-pt-content .pt-title {
-        font-size: 2.5rem; /* Ajuste para responsividade */
+        font-size: 2.5rem;
     }
     .home .hero-pt-content .pt-subtitle {
         font-size: 1.3rem;
@@ -516,7 +516,7 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas menores */
     header .logo .header-logo {
-        height: 70px; /* Ajuste para telas menores */
+        height: 80px; /* AGORA: Ajuste para 80px para telas menores */
     }
 }
 
@@ -569,13 +569,13 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas de celular */
     header .logo .header-logo {
-        height: 60px; /* Ajuste para telas menores */
+        height: 70px; /* AGORA: Ajuste para 70px para telas de celular */
     }
 }
 
 @media (max-width: 480px) {
     header .logo .header-logo {
-        height: 55px; /* Ajuste final para mobile */
+        height: 60px; /* AGORA: Ajuste final para mobile */
     }
     header ul li {
         margin: 0 10px 10px;
