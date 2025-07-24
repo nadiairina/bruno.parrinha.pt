@@ -1,4 +1,4 @@
-/* Estilos Gerais */
+/* Estilos Gerais (Manter como estão) */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -29,17 +29,17 @@ p {
 
 a {
     text-decoration: none;
-    color: #87CEEB; /* Azul Bebé para links */
+    color: #6495ED; /* CornflowerBlue para links */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #6495ED; /* Um pouco mais escuro para hover */
+    color: #4169E1; /* RoyalBlue para hover */
 }
 
 .btn {
     display: inline-block;
-    background: #87CEEB; /* Azul Bebé para botões */
+    background: #6495ED; /* CornflowerBlue para botões */
     color: #fff;
     padding: 12px 25px;
     border-radius: 50px;
@@ -54,7 +54,7 @@ a:hover {
 }
 
 .btn:hover {
-    background: #6495ED; /* Um pouco mais escuro para hover */
+    background: #4169E1; /* RoyalBlue para hover do botão */
     transform: translateY(-3px);
 }
 
@@ -70,7 +70,7 @@ a:hover {
 
 /* Header */
 header {
-    background: #ADD8E6; /* Azul Bebé para o cabeçalho */
+    background: #4169E1; /* RoyalBlue para o cabeçalho */
     color: #fff;
     padding: 1.2rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -85,9 +85,9 @@ header nav {
     padding: 0 25px;
 }
 
-/* NOVO: Estilo para a imagem do logotipo */
+/* Estilo para a imagem do logotipo */
 header .logo .header-logo {
-    height: 60px; /* Reduzi o tamanho para 60px. Pode ajustar este valor. */
+    height: 70px; /* Aumentado para 70px. Pode ajustar este valor. */
     width: auto; /* Mantém a proporção da imagem */
     vertical-align: middle;
 }
@@ -97,11 +97,13 @@ header ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Para alinhar verticalmente os itens da navegação */
+    align-items: center; /* Garante que os itens da lista estão alinhados */
 }
 
 header ul li {
     margin-left: 30px;
+    /* Adicionado padding-bottom para criar espaço para a linha sem desalinhamento */
+    padding-bottom: 5px; /* Altura da linha + um pouco mais para espaçamento visual */
 }
 
 header ul li a {
@@ -109,8 +111,8 @@ header ul li a {
     font-weight: 600;
     padding: 8px 0;
     position: relative;
-    display: flex; /* Para alinhar o texto e o ícone se o ícone fosse dentro do mesmo <a> */
-    align-items: center;
+    display: block; /* Mudei para block para preencher o espaço do padding-bottom do li */
+    line-height: 1; /* Para controlar melhor a altura do texto */
 }
 
 /* Garante que o texto dos links da navegação permanece preto no hover */
@@ -118,6 +120,7 @@ header ul li a:hover {
     color: #212529; /* Preto */
 }
 
+/* NOVO: Estilo para o ícone do Instagram */
 header ul li a .fab.fa-instagram {
     font-size: 1.5rem;
     margin-left: 0px;
@@ -130,7 +133,7 @@ header ul li a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -5px;
+    bottom: -5px; /* Posição da linha */
     left: 0;
     background-color: #212529; /* Preto para a linha de hover/active */
     transition: width 0.3s ease;
@@ -142,7 +145,7 @@ header ul li a.current::after {
 }
 
 
-/* Main Content Styling */
+/* Main Content Styling (Manter como está) */
 main {
     padding: 60px 0;
     min-height: calc(100vh - 180px);
@@ -152,7 +155,7 @@ section {
     margin-bottom: 60px;
 }
 
-/* Home Page Specifics */
+/* Home Page Specifics (Manter como está) */
 
 /* Hero PT Section */
 .home .hero-pt-section {
@@ -512,7 +515,7 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas menores */
     header .logo .header-logo {
-        height: 50px; /* Ajuste para telas menores */
+        height: 60px; /* Ajuste para telas menores */
     }
 }
 
@@ -565,13 +568,13 @@ footer .social-links a:hover {
     }
     /* Ajuste para o logotipo em telas de celular */
     header .logo .header-logo {
-        height: 40px; /* Ajuste para telas menores */
+        height: 50px; /* Ajuste para telas menores */
     }
 }
 
 @media (max-width: 480px) {
     header .logo .header-logo {
-        height: 35px; /* Ajuste final para mobile */
+        height: 45px; /* Ajuste final para mobile */
     }
     header ul li {
         margin: 0 10px 10px;
