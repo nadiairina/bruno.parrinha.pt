@@ -13,19 +13,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Verifica se estamos na página de contacto e se o formulário existe
     if (form) {
         var status = document.getElementById("form-status");
-        var subjectInput = document.getElementById("subject"); // Adicionado para o campo assunto
+        var subjectInput = document.getElementById("subject");
 
-        // --- NOVO CÓDIGO AQUI: Pré-preencher campo "Assunto" ---
+        // --- CÓDIGO ATUALIZADO AQUI: Pré-preencher campo "Assunto" com fallback ---
         const urlParams = new URLSearchParams(window.location.search);
         const assuntoParam = urlParams.get('assunto'); // Pega o valor do parâmetro 'assunto'
 
-        if (assuntoParam && subjectInput) {
-            subjectInput.value = assuntoParam; // Define o valor do input do assunto
+        if (subjectInput) { // Garante que o input do assunto existe
+            if (assuntoParam) {
+                subjectInput.value = assuntoParam; // Preenche com o assunto específico do botão
+            } else {
+                subjectInput.value = "Pedido de informações"; // Valor padrão se não houver parâmetro
+            }
             // Opcional: pode-se desabilitar o campo se quiser que não seja alterado
             // subjectInput.readOnly = true;
             // subjectInput.style.backgroundColor = '#e9ecef'; // Cor de fundo para campo readonly
         }
-        // --- FIM DO NOVO CÓDIGO ---
+        // --- FIM DO CÓDIGO ATUALIZADO ---
 
 
         form.addEventListener("submit", function(event) {
