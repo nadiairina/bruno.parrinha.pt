@@ -630,3 +630,9 @@ footer .social-links a:hover {
         font-size: 1.05rem;
     }
 }
+/* Estilo específico para os botões dentro da secção de serviços */
+.service-details .btn {
+    text-transform: none; /* Isto remove o efeito de maiúsculas */
+    /* Se quiseres que a primeira letra de cada palavra seja maiúscula: */
+    text-transform: capitalize;
+}
