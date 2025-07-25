@@ -1,7 +1,7 @@
 // Inicialização do AOS (Animate On Scroll)
 AOS.init({
     duration: 1000, // duração da animação em ms
-    once: true,     // animações ocorrem apenas uma vez
+    once: true,      // animações ocorrem apenas uma vez
 });
 
 // Lógica de Validação e Envio do Formulário (Formspree)
@@ -13,6 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Verifica se estamos na página de contacto e se o formulário existe
     if (form) {
         var status = document.getElementById("form-status");
+        var subjectInput = document.getElementById("subject"); // Adicionado para o campo assunto
+
+        // --- NOVO CÓDIGO AQUI: Pré-preencher campo "Assunto" ---
+        const urlParams = new URLSearchParams(window.location.search);
+        const assuntoParam = urlParams.get('assunto'); // Pega o valor do parâmetro 'assunto'
+
+        if (assuntoParam && subjectInput) {
+            subjectInput.value = assuntoParam; // Define o valor do input do assunto
+            // Opcional: pode-se desabilitar o campo se quiser que não seja alterado
+            // subjectInput.readOnly = true;
+            // subjectInput.style.backgroundColor = '#e9ecef'; // Cor de fundo para campo readonly
+        }
+        // --- FIM DO NOVO CÓDIGO ---
+
 
         form.addEventListener("submit", function(event) {
             event.preventDefault(); // Impede o envio padrão do formulário
